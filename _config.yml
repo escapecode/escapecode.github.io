@@ -1,4 +1,3 @@
-theme: jekyll-theme-architect
 permalink: /:year/:i_month/:i_day/:title.html
 exclude: [Rakefile, Gemfile, Gemfile.lock, README.markdown, Capfile, bin, s3_website.yml, tmp]
 paginate: 5
@@ -9,7 +8,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-feed
-theme: jekyll-theme-so-simple
+theme: jekyll-theme-architect
 masthead_title: Home
 title: "Howdy"
 logo: "media/logo.jpg"
