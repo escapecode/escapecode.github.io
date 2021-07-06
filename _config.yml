@@ -1,1 +1,78 @@
 theme: jekyll-theme-architect
+permalink: /:year/:i_month/:i_day/:title.html
+exclude: [Rakefile, Gemfile, Gemfile.lock, README.markdown, Capfile, bin, s3_website.yml, tmp]
+paginate: 5
+paginate_path: /page:num/
+plugins:
+  - jekyll-paginate
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-feed
+theme: jekyll-theme-so-simple
+masthead_title: Home
+title: "Howdy"
+logo: "media/logo.jpg"
+description: "yup"
+masthead_bio: "awesome."
+twitter:
+  username: none
+
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
+
+search: true
+
+author:
+  name: "escapecode"
+  location: "Berlin, Germany"
+  picture: media/author.jpg
+  bio: "awesome2"
+  twitter: none
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/none"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/nobody/"
+    - label: "Contact Me"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "/contact/"
+
+footer_links:
+  - title: "Twitter"
+    icon: "fab fa-fw fa-twitter-square"
+    url: "https://twitter.com/none"
+  - title: "Contact Me"
+    icon: "fas fa-fw fa-envelope-square"
+    url: "/contact/"
+  - title: "Legal"
+    url: "/legal/"
+    icon: "fas fa-fw fa-balance-scale"
+
+url: "https://escapecode.github.io"
+feed:
+  path: feed.xml
+
+defaults:
+  # _posts
+  defaults:
+  # Post defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comments: false
+      share: false
+
+locale: en-US
+
+copyright: 2021 escapecode ([Legal](/legal/))
+
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
